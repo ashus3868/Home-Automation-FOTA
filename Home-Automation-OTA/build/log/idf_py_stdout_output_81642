@@ -1,0 +1,862 @@
+��������������������������������������������������������������������������ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15672
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (33) boot: ESP-IDF v5.2-dev-823-g903af13e84-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Oct 13 2024 23:41:33[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.1[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (81) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (88) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (96) boot:  3 factory          factory app      00 00 00010000 00150000[0m
+[0;32mI (103) boot:  4 ota_0            OTA app          00 10 00160000 00140000[0m
+[0;32mI (111) boot:  5 ota_1            OTA app          00 11 002a0000 00140000[0m
+[0;32mI (118) boot:  6 nvs_key          NVS keys         01 04 003e0000 00001000[0m
+[0;32mI (126) boot: End of partition table[0m
+[0;32mI (130) boot: Defaulting to factory image[0m
+[0;32mI (135) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=408b4h (264372) map[0m
+[0;32mI (239) esp_image: segment 1: paddr=000508dc vaddr=3ffb0000 size=03714h ( 14100) load[0m
+[0;32mI (244) esp_image: segment 2: paddr=00053ff8 vaddr=40080000 size=0c020h ( 49184) load[0m
+[0;32mI (265) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=c1f1ch (794396) map[0m
+[0;32mI (552) esp_image: segment 4: paddr=00121f44 vaddr=4008c020 size=07d50h ( 32080) load[0m
+[0;32mI (576) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (576) boot: Disabling RNG early entropy source...[0m
+[0;32mI (587) cpu_start: Multicore app[0m
+[0;32mI (588) cpu_start: Pro cpu up.[0m
+[0;32mI (588) cpu_start: Starting app cpu, entry point is 0x40081094[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (606) cpu_start: Pro cpu start user code[0m
+[0;32mI (606) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (606) cpu_start: Application information:[0m
+[0;32mI (610) cpu_start: Project name:     firebase-esp-idf[0m
+[0;32mI (616) cpu_start: App version:      1[0m
+[0;32mI (621) cpu_start: Compile time:     Oct 13 2024 23:43:32[0m
+[0;32mI (627) cpu_start: ELF file SHA256:  49fe3b49d...[0m
+[0;32mI (632) cpu_start: ESP-IDF:          v5.2-dev-823-g903af13e84-dirty[0m
+[0;32mI (639) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (644) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (649) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (653) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (661) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (666) heap_init: At 3FFB9488 len 00026B78 (154 KiB): DRAM[0m
+[0;32mI (673) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (679) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (686) heap_init: At 40093D70 len 0000C290 (48 KiB): IRAM[0m
+[0;32mI (693) spi_flash: detected chip: generic[0m
+[0;32mI (696) spi_flash: flash io: dio[0m
+[0;32mI (704) app_start: Starting scheduler on CPU0[0m
+[0;32mI (705) app_start: Starting scheduler on CPU1[0m
+[0;32mI (705) main_task: Started on CPU0[0m
+[0;32mI (715) main_task: Calling app_main()[0m
+[0;32mI (725) example_connect: Start example_connect.[0m
+I (735) wifi:wifi driver task: 3ffc230c, prio:23, stack:6656, core=0
+I (735) wifi:wifi firmware version: 10c8635
+I (735) wifi:wifi certification version: v7.0
+I (735) wifi:config NVS flash: enabled
+I (745) wifi:config nano formating: disabled
+I (745) wifi:Init data frame dynamic rx buffer num: 32
+I (745) wifi:Init management frame dynamic rx buffer num: 32
+I (755) wifi:Init management short buffer num: 32
+I (755) wifi:Init dynamic tx buffer num: 32
+I (765) wifi:Init static rx buffer size: 1600
+I (765) wifi:Init static rx buffer num: 10
+I (775) wifi:Init dynamic rx buffer num: 32
+[0;32mI (775) wifi_init: rx ba win: 6[0m
+[0;32mI (775) wifi_init: tcpip mbox: 32[0m
+[0;32mI (785) wifi_init: udp mbox: 6[0m
+[0;32mI (785) wifi_init: tcp mbox: 6[0m
+[0;32mI (795) wifi_init: tcp tx win: 5760[0m
+[0;32mI (795) wifi_init: tcp rx win: 5760[0m
+[0;32mI (795) wifi_init: tcp mss: 1440[0m
+[0;32mI (805) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (805) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (815) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (915) wifi:mode : sta (d4:8a:fc:9d:cf:ec)
+I (925) wifi:enable tsf
+[0;32mI (925) example_connect: Connecting to #include<iot.h>...[0m
+[0;32mI (925) example_connect: Waiting for IP(s)[0m
+I (3335) wifi:new:<2,1>, old:<1,0>, ap:<255,255>, sta:<2,1>, prof:1
+I (4255) wifi:state: init -> auth (b0)
+I (4265) wifi:state: auth -> assoc (0)
+I (4275) wifi:state: assoc -> run (10)
+I (4385) wifi:connected with #include<iot.h>, aid = 4, channel 2, 40U, bssid = c2:94:ad:eb:8a:fa
+I (4385) wifi:security: WPA2-PSK, phy: bgn, rssi: -56
+I (4385) wifi:pm start, type: 1
+
+I (4395) wifi:<ba-add>idx:0 (ifx:0, c2:94:ad:eb:8a:fa), tid:6, ssn:5, winSize:64
+I (4665) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (5725) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:d68a:fcff:fe9d:cfec, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (5795) wifi:<ba-add>idx:1 (ifx:0, c2:94:ad:eb:8a:fa), tid:0, ssn:1, winSize:64
+[0;32mI (7385) esp_netif_handlers: example_netif_sta ip: 192.168.1.9, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (7385) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.9[0m
+[0;32mI (7395) example_common: Connected to example_netif_sta[0m
+[0;32mI (7395) example_common: - IPv4 address: 192.168.1.9,[0m
+[0;32mI (7405) example_common: - IPv6 address: fe80:0000:0000:0000:d68a:fcff:fe9d:cfec, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (7415) wifi:Set ps type: 0
+
+[0;31mE (8755) FirebaseApp: Error while performing request esp_err_t code=0x0 | status_code=400[0m
+[0;31mE (8755) FirebaseApp: request: url=https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=BJZyIz3vaVD4HO6IKXNEc8TcbU00ZsncsFXohfEw 
+method=1 
+post_field={"email":"ashus3868@gmail.com", "password":"Ashu@123", "returnSecureToken": true}[0m
+[0;31mE (8775) FirebaseApp: response=
+{
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "identitytoolkit.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+[0m
+[0;31mE (8835) FirebaseApp: Failed to get refresh token[0m
+[0;32mI (10275) RTDB: PUT successful[0m
+[0;32mI (10545) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (11815) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (12085) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (13475) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (13745) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (14025) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (14295) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (14565) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (14835) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (15115) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (15385) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (15665) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (15935) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (16205) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (16475) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (16745) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (17015) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (17285) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (17565) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (17855) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (18135) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (18445) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (18725) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (18995) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (19285) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (19555) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (19825) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (20105) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (20375) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (20375) simple_ota_example: Starting OTA example task[0m
+[0;32mI (20375) simple_ota_example: Attempting to download update from http://192.168.1.4:5000/download/firebase-esp-idf.bin[0m
+[0;33mW (20385) esp_https_ota: Continuing with insecure option because CONFIG_ESP_HTTPS_OTA_ALLOW_HTTP is set.[0m
+[0;32mI (20475) esp_https_ota: Starting OTA...[0m
+[0;32mI (20475) esp_https_ota: Writing to partition subtype 16 at offset 0x160000[0m
+[0;32mI (21985) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (22625) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (23085) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (23675) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (24145) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (24695) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (25265) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (25975) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (26355) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (26755) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (27155) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (27715) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (28095) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (28515) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (29085) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (29625) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (30025) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (30475) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (30925) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (31425) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (31885) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (32355) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (32745) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (33285) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (33825) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (34215) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (34615) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (35315) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (35855) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (36325) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (36745) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (37315) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (37715) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (38125) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (38675) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (39075) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (39565) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (40065) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (40605) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (41015) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (41575) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (42075) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (42475) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (42785) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (43265) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (43665) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (44065) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (44495) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (45115) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (45505) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (46135) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (46625) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (46945) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (47565) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (47995) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (48685) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (49245) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (49645) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (50185) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (50745) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (51225) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (51555) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (52025) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (52515) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (52995) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (53545) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (53945) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (54495) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (55065) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (55855) RTDB: Data with path=Bedroom2 acquired[0m
+[0;31mE (62405) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (62405) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (62405) task_wdt: Tasks currently running:[0m
+[0;31mE (62405) task_wdt: CPU 0: ipc0[0m
+[0;31mE (62405) task_wdt: CPU 1: IDLE[0m
+[0;31mE (62405) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DE9A7:0x3FFB1D00 0x40082F79:0x3FFB1D30 0x4000BFED:0x3FFAF3B0 0x40088DC6:0x3FFAF3C0 0x400821A9:0x3FFAF3E0 0x40083B1F:0x3FFAF400 0x4008488F:0x3FFAF420
+
+[0;32mI (65205) esp_image: segment 0: paddr=00160020 vaddr=3f400020 size=408b4h (264372) map[0m
+[0;32mI (65355) esp_image: segment 1: paddr=001a08dc vaddr=3ffb0000 size=03714h ( 14100) [0m
+[0;32mI (65375) esp_image: segment 2: paddr=001a3ff8 vaddr=40080000 size=0c020h ( 49184) [0m
+[0;32mI (65405) esp_image: segment 3: paddr=001b0020 vaddr=400d0020 size=c1f1ch (794396) map[0m
+[0;32mI (65865) esp_image: segment 4: paddr=00271f44 vaddr=4008c020 size=07d50h ( 32080) [0m
+[0;32mI (65895) esp_image: segment 0: paddr=00160020 vaddr=3f400020 size=408b4h (264372) map[0m
+[0;32mI (65985) esp_image: segment 1: paddr=001a08dc vaddr=3ffb0000 size=03714h ( 14100) [0m
+[0;32mI (65985) esp_image: segment 2: paddr=001a3ff8 vaddr=40080000 size=0c020h ( 49184) [0m
+[0;32mI (66005) esp_image: segment 3: paddr=001b0020 vaddr=400d0020 size=c1f1ch (794396) map[0m
+[0;32mI (66155) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (66275) esp_image: segment 4: paddr=00271f44 vaddr=4008c020 size=07d50h ( 32080) [0m
+[0;32mI (66365) simple_ota_example: OTA Succeed, Rebooting...[0m
+I (66365) wifi:state: run -> init (0)
+I (66365) wifi:pm stop, total sleep time: 829593 us / 61976593 us
+
+I (66365) wifi:<ba-del>idx:1, tid:0
+I (66365) wifi:<ba-del>idx:0, tid:6
+I (66375) wifi:new:<2,0>, old:<2,1>, ap:<255,255>, sta:<2,1>, prof:1
+E (66375) wifi:NAN WiFi stop
+[0;31mE (66385) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (66395) FirebaseApp: Error while performing request esp_err_t code=0x7004 | status_code=-1[0m
+[0;31mE (66395) FirebaseApp: request: url=https://esp-idf-fire-default-rtdb.firebaseio.com/Bedroom2.json?auth= 
+method=0 
+post_field=[0m
+[0;31mE (66415) FirebaseApp: response=
+[0m
+[0;31mE (66415) RTDB: Error while getting data at path Bedroom2| esp_err_t=28676 | status_code=-1[0m
+[0;32mI (66425) RTDB: Token expired ? Trying refreshing auth[0m
+[0;31mE (66435) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (66435) esp-tls: Failed to open new connection[0m
+I (66445) wifi:flush txq
+I (66445) wifi:stop sw txq
+I (66445) wifi:lmac stop hw txq
+[0;31mE (66455) transport_base: Failed to open a new connection[0m
+I (66455) wifi:Deinit lldesc rx mblock:10
+[0;31mE (66465) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (66465) FirebaseApp: Error while performets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15672
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (32) boot: ESP-IDF v5.2-dev-823-g903af13e84-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Oct 13 2024 23:41:33[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.1[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (80) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (88) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (95) boot:  3 factory          factory app      00 00 00010000 00150000[0m
+[0;32mI (103) boot:  4 ota_0            OTA app          00 10 00160000 00140000[0m
+[0;32mI (110) boot:  5 ota_1            OTA app          00 11 002a0000 00140000[0m
+[0;32mI (118) boot:  6 nvs_key          NVS keys         01 04 003e0000 00001000[0m
+[0;32mI (126) boot: End of partition table[0m
+[0;32mI (130) esp_image: segment 0: paddr=00160020 vaddr=3f400020 size=408b4h (264372) map[0m
+[0;32mI (234) esp_image: segment 1: paddr=001a08dc vaddr=3ffb0000 size=03714h ( 14100) load[0m
+[0;32mI (240) esp_image: segment 2: paddr=001a3ff8 vaddr=40080000 size=0c020h ( 49184) load[0m
+[0;32mI (260) esp_image: segment 3: paddr=001b0020 vaddr=400d0020 size=c1f1ch (794396) map[0m
+[0;32mI (547) esp_image: segment 4: paddr=00271f44 vaddr=4008c020 size=07d50h ( 32080) load[0m
+[0;32mI (571) boot: Loaded app from partition at offset 0x160000[0m
+[0;32mI (571) boot: Disabling RNG early entropy source...[0m
+[0;32mI (583) cpu_start: Multicore app[0m
+[0;32mI (583) cpu_start: Pro cpu up.[0m
+[0;32mI (583) cpu_start: Starting app cpu, entry point is 0x40081094[0m
+[0;32mI (570) cpu_start: App cpu up.[0m
+[0;32mI (601) cpu_start: Pro cpu start user code[0m
+[0;32mI (601) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (601) cpu_start: Application information:[0m
+[0;32mI (606) cpu_start: Project name:     firebase-esp-idf[0m
+[0;32mI (612) cpu_start: App version:      1[0m
+[0;32mI (616) cpu_start: Compile time:     Oct 13 2024 23:43:32[0m
+[0;32mI (622) cpu_start: ELF file SHA256:  ae8124a1e...[0m
+[0;32mI (628) cpu_start: ESP-IDF:          v5.2-dev-823-g903af13e84-dirty[0m
+[0;32mI (634) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (639) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (644) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (649) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (656) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (662) heap_init: At 3FFB9488 len 00026B78 (154 KiB): DRAM[0m
+[0;32mI (668) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (675) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (681) heap_init: At 40093D70 len 0000C290 (48 KiB): IRAM[0m
+[0;32mI (689) spi_flash: detected chip: generic[0m
+[0;32mI (692) spi_flash: flash io: dio[0m
+[0;32mI (700) app_start: Starting scheduler on CPU0[0m
+[0;32mI (701) app_start: Starting scheduler on CPU1[0m
+[0;32mI (701) main_task: Started on CPU0[0m
+[0;32mI (711) main_task: Calling app_main()[0m
+[0;32mI (721) example_connect: Start example_connect.[0m
+I (731) wifi:wifi driver task: 3ffc230c, prio:23, stack:6656, core=0
+I (731) wifi:wifi firmware version: 10c8635
+I (731) wifi:wifi certification version: v7.0
+I (731) wifi:config NVS flash: enabled
+I (741) wifi:config nano formating: disabled
+I (741) wifi:Init data frame dynamic rx buffer num: 32
+I (741) wifi:Init management frame dynamic rx buffer num: 32
+I (751) wifi:Init management short buffer num: 32
+I (751) wifi:Init dynamic tx buffer num: 32
+I (761) wifi:Init static rx buffer size: 1600
+I (761) wifi:Init static rx buffer num: 10
+I (771) wifi:Init dynamic rx buffer num: 32
+[0;32mI (771) wifi_init: rx ba win: 6[0m
+[0;32mI (771) wifi_init: tcpip mbox: 32[0m
+[0;32mI (781) wifi_init: udp mbox: 6[0m
+[0;32mI (781) wifi_init: tcp mbox: 6[0m
+[0;32mI (791) wifi_init: tcp tx win: 5760[0m
+[0;32mI (791) wifi_init: tcp rx win: 5760[0m
+[0;32mI (791) wifi_init: tcp mss: 1440[0m
+[0;32mI (801) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (801) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (811) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (921) wifi:mode : sta (d4:8a:fc:9d:cf:ec)
+I (921) wifi:enable tsf
+[0;32mI (921) example_connect: Connecting to #include<iot.h>...[0m
+[0;32mI (921) example_connect: Waiting for IP(s)[0m
+I (3331) wifi:new:<2,1>, old:<1,0>, ap:<255,255>, sta:<2,1>, prof:1
+I (4261) wifi:state: init -> auth (b0)
+I (4261) wifi:state: auth -> assoc (0)
+I (4271) wifi:state: assoc -> run (10)
+I (4381) wifi:connected with #include<iot.h>, aid = 4, channel 2, 40U, bssid = c2:94:ad:eb:8a:fa
+I (4381) wifi:security: WPA2-PSK, phy: bgn, rssi: -58
+I (4381) wifi:pm start, type: 1
+
+I (4431) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (4571) wifi:<ba-add>idx:0 (ifx:0, c2:94:ad:eb:8a:fa), tid:6, ssn:5, winSize:64
+[0;32mI (5721) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:d68a:fcff:fe9d:cfec, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (5751) wifi:<ba-add>idx:1 (ifx:0, c2:94:ad:eb:8a:fa), tid:0, ssn:1, winSize:64
+[0;32mI (7381) esp_netif_handlers: example_netif_sta ip: 192.168.1.9, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (7381) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.9[0m
+[0;32mI (7391) example_common: Connected to example_netif_sta[0m
+[0;32mI (7391) example_common: - IPv4 address: 192.168.1.9,[0m
+[0;32mI (7401) example_common: - IPv6 address: fe80:0000:0000:0000:d68a:fcff:fe9d:cfec, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (7411) wifi:Set ps type: 0
+
+[0;31mE (8661) FirebaseApp: Error while performing request esp_err_t code=0x0 | status_code=400[0m
+[0;31mE (8661) FirebaseApp: request: url=https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=BJZyIz3vaVD4HO6IKXNEc8TcbU00ZsncsFXohfEw 
+method=1 
+post_field={"email":"ashus3868@gmail.com", "password":"Ashu@123", "returnSecureToken": true}[0m
+[0;31mE (8681) FirebaseApp: response=
+{
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "identitytoolkit.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+[0m
+[0;31mE (8731) FirebaseApp: Failed to get refresh token[0m
+[0;32mI (10201) RTDB: PUT successful[0m
+[0;32mI (10471) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (11741) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (12011) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (12291) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (12561) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (12841) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (13111) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (13391) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (13671) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (13951) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (14221) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (14501) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (14771) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (15041) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (15321) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (15601) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (15871) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (16161) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (16441) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (16721) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (16991) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (17261) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (17541) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (17821) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (18101) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (18381) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (18661) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (18931) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (19211) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (19491) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (19771) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (20041) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (20311) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (20591) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (20861) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (21141) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (21421) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (21701) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (21981) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (22251) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (22541) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (22821) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (23091) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (23371) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (23661) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (23931) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (24201) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (24701) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (24971) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (25251) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (25521) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (25801) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (26071) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (26341) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (26621) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (26901) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (27171) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (27441) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (27711) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (27991) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (28261) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (28541) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (28811) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (29091) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (29361) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (29631) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (29911) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (30201) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (30471) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (30751) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (31021) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (31301) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (31581) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (31881) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (32151) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (32421) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (32701) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (32981) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (33251) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (33521) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (33801) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (34071) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (34361) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (34641) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (34911) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (35191) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (35481) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (35751) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (36031) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (36311) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (36601) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (36871) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (37151) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (37431) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (37721) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (37991) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (38261) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (38541) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (38821) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (40251) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (40531) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (40811) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (41101) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (41371) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (41651) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (41931) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (42211) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (42491) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (42771) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (43051) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (43341) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (43621) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (43901) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (44181) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (44461) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (44741) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (45011) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (45301) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (45571) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (45851) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (46131) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (46411) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (46681) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (46971) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (47251) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (47531) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (47801) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (48081) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (48371) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (48651) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (48931) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (49211) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (49491) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (49771) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (50041) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (50321) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (50601) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (50881) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (51151) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (51431) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (51711) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (51991) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (52271) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (52551) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (52821) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (53101) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (53381) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (53661) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (53941) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (54221) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (54511) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (54791) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (55071) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (55351) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (55621) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (55901) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (56181) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (56461) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (56741) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (57031) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (57311) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (57601) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (57881) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (58161) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (58441) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (58721) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (59001) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (59281) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (59561) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (59841) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (60121) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (60391) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (60681) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (60961) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (61241) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (61521) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (61801) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (62081) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (62371) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (62651) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (62931) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (63221) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (63491) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (63771) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (64051) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (64331) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (64611) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (64891) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (65161) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (65451) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (65731) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (66001) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (66291) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (66561) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (66841) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (67121) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (67401) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (67681) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (67961) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (69451) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (69731) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (70021) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (70301) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (70591) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (70871) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (71161) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (71441) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (71721) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (72001) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (72281) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (72561) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (72841) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (73121) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (73401) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (73671) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (73961) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (74241) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (74521) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (74801) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (75091) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (75361) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (75651) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (75931) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (76211) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (76491) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (76771) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (77061) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (77341) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (77631) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (77911) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (78191) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (78801) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (79081) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (79361) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (79651) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (79931) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (80221) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (80501) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (80771) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (81061) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (81341) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (81621) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (81901) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (82171) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (82471) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (82761) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (83041) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (83321) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (83591) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (83881) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (84161) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (84451) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (84731) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (85031) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (85311) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (85601) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (85881) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (86161) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (86441) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (86721) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (87011) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (87301) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (87581) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (87861) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (88131) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (88411) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (88691) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (88981) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (89261) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (89541) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (89821) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (90101) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (90381) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (90661) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (90951) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (91231) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (91511) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (91801) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (92081) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (92361) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (92641) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (92931) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (93211) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (93491) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (93771) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (94051) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (94331) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (94611) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (94891) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (95171) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (95451) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (95751) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (96031) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (96311) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (96591) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (96871) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (97161) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (97441) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (97731) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (99151) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (99441) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (99711) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (100001) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (100281) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (100561) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (100841) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (101121) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (101411) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (101721) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (102001) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (102291) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (102581) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (102871) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (103151) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (103441) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (103721) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (104001) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (104281) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (104561) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (104841) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (105121) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (105411) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (105691) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (105971) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (106251) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (106541) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (106821) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (107121) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (107411) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (107701) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (107981) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (108271) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (108561) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (108851) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (109131) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (109411) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (109691) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (109981) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (110261) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (110551) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (110851) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (111151) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (111441) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (111721) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (112001) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (112291) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (112571) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (112861) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (113151) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (113431) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (113711) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (114001) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (114291) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (114571) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (114861) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (115141) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (115421) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (115711) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (116001) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (116281) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (116561) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (116841) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (117121) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (117401) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (117681) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (117961) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (118241) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (118521) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (118801) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (119081) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (119361) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (119641) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (119931) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (120211) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (120501) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (120781) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (121061) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (121341) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (121621) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (121911) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (122191) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (122471) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (122751) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (123031) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (123311) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (123591) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (123871) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (124151) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (124431) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (124711) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (124991) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (125281) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (125561) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (125841) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (126121) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (126401) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (126681) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (126981) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (127271) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (128671) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (128971) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (129241) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (129521) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (129801) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (130081) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (130351) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (130631) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (130901) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (131171) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (131451) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (131741) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (132021) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (132291) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (132781) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (133051) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (133331) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (133611) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (133881) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (134161) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (134431) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (134711) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (134991) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (135261) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (135541) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (135821) RTDB: Data with path=Bedroom2 acquired[0m

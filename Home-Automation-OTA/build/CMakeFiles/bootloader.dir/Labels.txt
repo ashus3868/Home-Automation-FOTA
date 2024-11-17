@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/ashishsaini/Downloads/Home-Automation-OTA-Server/Home-Automation-OTA/build/CMakeFiles/bootloader
+/Users/ashishsaini/Downloads/Home-Automation-OTA-Server/Home-Automation-OTA/build/CMakeFiles/bootloader.rule
+/Users/ashishsaini/Downloads/Home-Automation-OTA-Server/Home-Automation-OTA/build/CMakeFiles/bootloader-complete.rule
+/Users/ashishsaini/Downloads/Home-Automation-OTA-Server/Home-Automation-OTA/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/ashishsaini/Downloads/Home-Automation-OTA-Server/Home-Automation-OTA/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/ashishsaini/Downloads/Home-Automation-OTA-Server/Home-Automation-OTA/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/ashishsaini/Downloads/Home-Automation-OTA-Server/Home-Automation-OTA/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/ashishsaini/Downloads/Home-Automation-OTA-Server/Home-Automation-OTA/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/ashishsaini/Downloads/Home-Automation-OTA-Server/Home-Automation-OTA/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/ashishsaini/Downloads/Home-Automation-OTA-Server/Home-Automation-OTA/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

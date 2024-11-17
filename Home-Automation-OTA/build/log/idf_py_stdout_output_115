@@ -1,0 +1,746 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15672
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (33) boot: ESP-IDF v5.2-dev-823-g903af13e84-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Oct 13 2024 23:41:33[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.1[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (81) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (88) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (96) boot:  3 factory          factory app      00 00 00010000 00150000[0m
+[0;32mI (103) boot:  4 ota_0            OTA app          00 10 00160000 00140000[0m
+[0;32mI (111) boot:  5 ota_1            OTA app          00 11 002a0000 00140000[0m
+[0;32mI (118) boot:  6 nvs_key          NVS keys         01 04 003e0000 00001000[0m
+[0;32mI (126) boot: End of partition table[0m
+[0;32mI (130) boot: Defaulting to factory image[0m
+[0;32mI (135) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=408b4h (264372) map[0m
+[0;32mI (239) esp_image: segment 1: paddr=000508dc vaddr=3ffb0000 size=03714h ( 14100) load[0m
+[0;32mI (244) esp_image: segment 2: paddr=00053ff8 vaddr=40080000 size=0c020h ( 49184) load[0m
+[0;32mI (265) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=c1f1ch (794396) map[0m
+[0;32mI (552) esp_image: segment 4: paddr=00121f44 vaddr=4008c020 size=07d50h ( 32080) load[0m
+[0;32mI (576) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (576) boot: Disabling RNG early entropy source...[0m
+[0;32mI (587) cpu_start: Multicore app[0m
+[0;32mI (588) cpu_start: Pro cpu up.[0m
+[0;32mI (588) cpu_start: Starting app cpu, entry point is 0x40081094[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (606) cpu_start: Pro cpu start user code[0m
+[0;32mI (606) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (606) cpu_start: Application information:[0m
+[0;32mI (610) cpu_start: Project name:     firebase-esp-idf[0m
+[0;32mI (616) cpu_start: App version:      1[0m
+[0;32mI (621) cpu_start: Compile time:     Oct 13 2024 23:43:32[0m
+[0;32mI (627) cpu_start: ELF file SHA256:  ae8124a1e...[0m
+[0;32mI (632) cpu_start: ESP-IDF:          v5.2-dev-823-g903af13e84-dirty[0m
+[0;32mI (639) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (644) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (649) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (653) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (661) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (667) heap_init: At 3FFB9488 len 00026B78 (154 KiB): DRAM[0m
+[0;32mI (673) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (679) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (686) heap_init: At 40093D70 len 0000C290 (48 KiB): IRAM[0m
+[0;32mI (693) spi_flash: detected chip: generic[0m
+[0;32mI (696) spi_flash: flash io: dio[0m
+[0;32mI (704) app_start: Starting scheduler on CPU0[0m
+[0;32mI (705) app_start: Starting scheduler on CPU1[0m
+[0;32mI (705) main_task: Started on CPU0[0m
+[0;32mI (715) main_task: Calling app_main()[0m
+[0;32mI (735) example_connect: Start example_connect.[0m
+I (745) wifi:wifi driver task: 3ffc2288, prio:23, stack:6656, core=0
+I (745) wifi:wifi firmware version: 10c8635
+I (745) wifi:wifi certification version: v7.0
+I (745) wifi:config NVS flash: enabled
+I (745) wifi:config nano formating: disabled
+I (755) wifi:Init data frame dynamic rx buffer num: 32
+I (755) wifi:Init management frame dynamic rx buffer num: 32
+I (765) wifi:Init management short buffer num: 32
+I (765) wifi:Init dynamic tx buffer num: 32
+I (765) wifi:Init static rx buffer size: 1600
+I (775) wifi:Init static rx buffer num: 10
+I (775) wifi:Init dynamic rx buffer num: 32
+[0;32mI (785) wifi_init: rx ba win: 6[0m
+[0;32mI (785) wifi_init: tcpip mbox: 32[0m
+[0;32mI (785) wifi_init: udp mbox: 6[0m
+[0;32mI (795) wifi_init: tcp mbox: 6[0m
+[0;32mI (795) wifi_init: tcp tx win: 5760[0m
+[0;32mI (805) wifi_init: tcp rx win: 5760[0m
+[0;32mI (805) wifi_init: tcp mss: 1440[0m
+[0;32mI (805) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (815) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (815) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (925) wifi:mode : sta (d4:8a:fc:9d:cf:ec)
+I (925) wifi:enable tsf
+[0;32mI (935) example_connect: Connecting to #include<iot.h>...[0m
+[0;32mI (935) example_connect: Waiting for IP(s)[0m
+I (3345) wifi:new:<4,1>, old:<1,0>, ap:<255,255>, sta:<4,1>, prof:1
+I (4265) wifi:state: init -> auth (b0)
+I (4275) wifi:state: auth -> assoc (0)
+I (4285) wifi:state: assoc -> run (10)
+I (4375) wifi:connected with #include<iot.h>, aid = 5, channel 4, 40U, bssid = c2:94:ad:eb:8a:fa
+I (4385) wifi:security: WPA2-PSK, phy: bgn, rssi: -52
+I (4385) wifi:pm start, type: 1
+
+I (4385) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (4395) wifi:<ba-add>idx:0 (ifx:0, c2:94:ad:eb:8a:fa), tid:6, ssn:5, winSize:64
+[0;32mI (5725) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:d68a:fcff:fe9d:cfec, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (6445) wifi:<ba-add>idx:1 (ifx:0, c2:94:ad:eb:8a:fa), tid:0, ssn:0, winSize:64
+[0;32mI (7405) esp_netif_handlers: example_netif_sta ip: 192.168.1.7, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (7405) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.7[0m
+[0;32mI (7415) example_common: Connected to example_netif_sta[0m
+[0;32mI (7415) example_common: - IPv4 address: 192.168.1.7,[0m
+[0;32mI (7425) example_common: - IPv6 address: fe80:0000:0000:0000:d68a:fcff:fe9d:cfec, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (7435) wifi:Set ps type: 0
+
+[0;31mE (8655) FirebaseApp: Error while performing request esp_err_t code=0x0 | status_code=400[0m
+[0;31mE (8655) FirebaseApp: request: url=https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=BJZyIz3vaVD4HO6IKXNEc8TcbU00ZsncsFXohfEw 
+method=1 
+post_field={"email":"ashus3868@gmail.com", "password":"Ashu@123", "returnSecureToken": true}[0m
+[0;31mE (8685) FirebaseApp: response=
+{
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "identitytoolkit.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+[0m
+[0;31mE (8735) FirebaseApp: Failed to get refresh token[0m
+[0;32mI (10175) RTDB: PUT successful[0m
+[0;32mI (10455) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (11725) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (12005) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (12305) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (12595) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (12875) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (13155) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (13435) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (13715) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (13995) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (14275) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (14545) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (14825) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (15105) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (15385) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (15665) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (15945) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (16225) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (16505) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (16775) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (17215) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (17495) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (17765) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (18045) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (18325) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (18595) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (18875) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (19155) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (19435) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (19715) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (19995) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (20275) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (20545) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (20825) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (21105) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (21385) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (21665) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (21945) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (22225) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (22505) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (22785) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (23065) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (23345) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (23625) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (23905) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (24185) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (24465) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (24735) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (25015) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (25295) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (25575) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (25855) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (26135) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (26415) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (26685) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (26965) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (27245) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (27525) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (27805) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (28075) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (28365) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (28645) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (28925) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (29205) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (29485) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (29765) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (30035) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (30315) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (30615) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (30895) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (31165) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (31445) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (31725) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (32005) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (32275) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (32555) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (32825) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (33115) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (33385) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (33665) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (33945) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (34225) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (34505) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (34785) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (35055) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (35335) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (35625) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (35925) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (36205) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (36485) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (36765) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (37045) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (37325) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (37605) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (37885) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (38165) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (38445) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (38725) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (39005) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (40425) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (40705) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (41005) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (41285) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (41565) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (41855) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (42145) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (42425) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (42705) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (42995) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (43275) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (43565) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (43845) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (44125) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (44405) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (44695) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (44975) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (45255) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (45545) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (45825) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (46105) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (46395) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (46685) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (46965) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (47245) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (47535) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (47825) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (48105) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (48395) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (48675) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (48965) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (49255) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (49535) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (49815) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (50095) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (50385) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (50675) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (50955) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (51245) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (51525) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (51805) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (52085) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (52375) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (52655) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (52945) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (53245) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (53535) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (53815) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (54095) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (54385) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (54675) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (54955) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (55245) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (55525) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (55825) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (56125) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (56415) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (56695) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (56985) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (57265) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (57555) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (58175) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (58465) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (58745) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (58745) simple_ota_example: Starting OTA example task[0m
+[0;32mI (58745) simple_ota_example: Attempting to download update from http://192.168.1.2:5000/download/firebase-esp-idf.bin[0m
+[0;33mW (58755) esp_https_ota: Continuing with insecure option because CONFIG_ESP_HTTPS_OTA_ALLOW_HTTP is set.[0m
+[0;32mI (58915) esp_https_ota: Starting OTA...[0m
+[0;32mI (58915) esp_https_ota: Writing to partition subtype 16 at offset 0x160000[0m
+[0;32mI (60185) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (60605) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (61025) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (61435) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (62055) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (62395) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (62935) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (63395) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (63875) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (64405) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (65055) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (65455) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (65955) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (66505) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (66995) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (67335) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (67735) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (68575) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (69205) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (69745) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (70365) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (70775) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (71235) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (71645) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (72015) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (72555) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (73185) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (73725) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (74295) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (74605) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (75285) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (75855) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (76265) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (76705) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (77415) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (78185) RTDB: Data with path=Bedroom2 acquired[0m
+[0;31mE (84615) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (84615) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (84615) task_wdt: Tasks currently running:[0m
+[0;31mE (84615) task_wdt: CPU 0: ipc0[0m
+[0;31mE (84615) task_wdt: CPU 1: IDLE[0m
+[0;31mE (84615) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DE9A7:0x3FFB1D00 0x40082F79:0x3FFB1D30 0x4000BFED:0x3FFAF3B0 0x40088DC6:0x3FFAF3C0 0x400821A9:0x3FFAF3E0 0x40083B1F:0x3FFAF400 0x4008488F:0x3FFAF420
+
+[0;32mI (90515) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (90915) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (91385) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (91785) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (92335) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (92895) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (93375) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (93865) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (94345) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (94755) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (95225) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (95645) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (96055) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (96355) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (96875) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (97275) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (97625) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (98075) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (98425) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (98875) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (99275) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (99765) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (100105) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (100445) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (100885) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (101375) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (101845) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (102165) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (102615) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (103165) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (103655) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (104065) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (104505) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (104845) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (105195) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (105615) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (105975) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (106455) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (106905) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (107175) esp_image: segment 0: paddr=00160020 vaddr=3f400020 size=429c8h (272840) map[0m
+[0;32mI (107265) esp_image: segment 1: paddr=001a29f0 vaddr=3ffb0000 size=03b84h ( 15236) [0m
+[0;32mI (107275) esp_image: segment 2: paddr=001a657c vaddr=40080000 size=09a9ch ( 39580) [0m
+[0;32mI (107285) esp_image: segment 3: paddr=001b0020 vaddr=400d0020 size=de428h (910376) map[0m
+[0;32mI (107585) esp_image: segment 4: paddr=0028e450 vaddr=40089a9c size=0b3ech ( 46060) [0m
+[0;32mI (107615) esp_image: segment 0: paddr=00160020 vaddr=3f400020 size=429c8h (272840) map[0m
+[0;32mI (107705) esp_image: segment 1: paddr=001a29f0 vaddr=3ffb0000 size=03b84h ( 15236) [0m
+[0;32mI (107705) esp_image: segment 2: paddr=001a657c vaddr=40080000 size=09a9ch ( 39580) [0m
+[0;32mI (107725) esp_image: segment 3: paddr=001b0020 vaddr=400d0020 size=de428h (910376) map[0m
+[0;32mI (107915) RTDB: Data with path=Bedroom2 acquired[0m
+[0;32mI (108025) esp_image: segment 4: paddr=0028e450 vaddr=40089a9c size=0b3ech ( 46060) [0m
+[0;32mI (108115) simple_ota_example: OTA Succeed, Rebooting...[0m
+I (108115) wifi:state: run -> init (0)
+I (108115) wifi:pm stop, total sleep time: 1035224 us / 103727575 us
+
+I (108115) wifi:<ba-del>idx:1, tid:0
+I (108115) wifi:<ba-del>idx:0, tid:6
+I (108125) wifi:new:<4,0>, old:<4,1>, ap:<255,255>, sta:<4,1>, prof:1
+E (108135) wifi:NAN WiFi stop
+[0;31mE (108135) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (108145) FirebaseApp: Error while performing request esp_err_t code=0x7004 | status_code=-1[0m
+[0;31mE (108155) FirebaseApp: request: url=https://esp-idf-fire-default-rtdb.firebaseio.com/Bedroom2.json?auth= 
+method=0 
+post_field=[0m
+[0;31mE (108165) FirebaseApp: response=
+[0m
+[0;31mE (108165) RTDB: Error while getting data at path Bedroom2| esp_err_t=28676 | status_code=-1[0m
+[0;32mI (108175) RTDB: Token expired ? Trying refreshing auth[0m
+[0;31mE (108185) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (108185) esp-tls: Failed to open new connection[0m
+I (108195) wifi:flush txq
+I (108195) wifi:stop sw txq
+I (108195) wifi:lmac stop hw txq
+[0;31mE (108205) transport_base: Failed to open a new connection[0m
+I (108205) wifi:Deinit lldesc rx mblock:10
+[0;31mE (108215) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (108215) Firebasets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15672
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (32) boot: ESP-IDF v5.2-dev-823-g903af13e84-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Oct 13 2024 23:41:33[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.1[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (80) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (88) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (95) boot:  3 factory          factory app      00 00 00010000 00150000[0m
+[0;32mI (103) boot:  4 ota_0            OTA app          00 10 00160000 00140000[0m
+[0;32mI (110) boot:  5 ota_1            OTA app          00 11 002a0000 00140000[0m
+[0;32mI (118) boot:  6 nvs_key          NVS keys         01 04 003e0000 00001000[0m
+[0;32mI (126) boot: End of partition table[0m
+[0;32mI (130) esp_image: segment 0: paddr=00160020 vaddr=3f400020 size=429c8h (272840) map[0m
+[0;32mI (237) esp_image: segment 1: paddr=001a29f0 vaddr=3ffb0000 size=03b84h ( 15236) load[0m
+[0;32mI (243) esp_image: segment 2: paddr=001a657c vaddr=40080000 size=09a9ch ( 39580) load[0m
+[0;32mI (260) esp_image: segment 3: paddr=001b0020 vaddr=400d0020 size=de428h (910376) map[0m
+[0;32mI (589) esp_image: segment 4: paddr=0028e450 vaddr=40089a9c size=0b3ech ( 46060) load[0m
+[0;32mI (619) boot: Loaded app from partition at offset 0x160000[0m
+[0;32mI (619) boot: Disabling RNG early entropy source...[0m
+[0;32mI (630) cpu_start: Multicore app[0m
+[0;32mI (639) cpu_start: Pro cpu start user code[0m
+[0;32mI (639) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (639) cpu_start: Application information:[0m
+[0;32mI (642) cpu_start: Project name:     firebase-esp-idf[0m
+[0;32mI (648) cpu_start: App version:      c2f5f09-dirty[0m
+[0;32mI (653) cpu_start: Compile time:     Oct  7 2024 12:55:51[0m
+[0;32mI (660) cpu_start: ELF file SHA256:  27237ca3d...[0m
+[0;32mI (665) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (670) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (675) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (680) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (685) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (692) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (698) heap_init: At 3FFB9428 len 00026BD8 (154 KiB): DRAM[0m
+[0;32mI (704) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (710) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (717) heap_init: At 40094E88 len 0000B178 (44 KiB): IRAM[0m
+[0;32mI (724) spi_flash: detected chip: generic[0m
+[0;32mI (728) spi_flash: flash io: dio[0m
+[0;32mI (733) main_task: Started on CPU0[0m
+[0;32mI (743) main_task: Calling app_main()[0m
+[0;32mI (753) example_connect: Start example_connect.[0m
+I (763) wifi:wifi driver task: 3ffc21e8, prio:23, stack:6656, core=0
+I (763) wifi:wifi firmware version: 3e0076f
+I (763) wifi:wifi certification version: v7.0
+I (763) wifi:config NVS flash: enabled
+I (773) wifi:config nano formating: disabled
+I (773) wifi:Init data frame dynamic rx buffer num: 32
+I (773) wifi:Init static rx mgmt buffer num: 5
+I (783) wifi:Init management short buffer num: 32
+I (783) wifi:Init dynamic tx buffer num: 32
+I (793) wifi:Init static rx buffer size: 1600
+I (793) wifi:Init static rx buffer num: 10
+I (793) wifi:Init dynamic rx buffer num: 32
+[0;32mI (803) wifi_init: rx ba win: 6[0m
+[0;32mI (803) wifi_init: tcpip mbox: 32[0m
+[0;32mI (813) wifi_init: udp mbox: 6[0m
+[0;32mI (813) wifi_init: tcp mbox: 6[0m
+[0;32mI (813) wifi_init: tcp tx win: 5760[0m
+[0;32mI (823) wifi_init: tcp rx win: 5760[0m
+[0;32mI (823) wifi_init: tcp mss: 1440[0m
+[0;32mI (833) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (833) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (843) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;33mW (843) phy_init: failed to load RF calibration data (0xffffffff), falling back to full calibration[0m
+I (943) wifi:mode : sta (d4:8a:fc:9d:cf:ec)
+I (943) wifi:enable tsf
+[0;32mI (953) example_connect: Connecting to GSPL...[0m
+[0;32mI (953) example_connect: Waiting for IP(s)[0m
+[0;32mI (3363) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (5773) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (8193) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (10603) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (13013) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (15423) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (17843) example_connect: WiFi Connect failed 7 times, stop reconnect.[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d631b
+file: "./main/main.cpp" line 214
+func: void app_main()
+expression: example_connect()
+
+abort() was called at PC 0x400886b7 on core 0
+
+
+Backtrace: 0x4008164e:0x3ffbc6c0 0x400886c1:0x3ffbc6e0 0x4008f17e:0x3ffbc700 0x400886b7:0x3ffbc770 0x400d631b:0x3ffbc7a0 0x401ac6af:0x3ffbc940
+
+
+
+
+ELF file SHA256: 27237ca3d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15672
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (32) boot: ESP-IDF v5.2-dev-823-g903af13e84-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Oct 13 2024 23:41:33[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.1[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (80) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (88) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (95) boot:  3 factory          factory app      00 00 00010000 00150000[0m
+[0;32mI (103) boot:  4 ota_0            OTA app          00 10 00160000 00140000[0m
+[0;32mI (110) boot:  5 ota_1            OTA app          00 11 002a0000 00140000[0m
+[0;32mI (118) boot:  6 nvs_key          NVS keys         01 04 003e0000 00001000[0m
+[0;32mI (126) boot: End of partition table[0m
+[0;32mI (130) esp_image: segment 0: paddr=00160020 vaddr=3f400020 size=429c8h (272840) map[0m
+[0;32mI (237) esp_image: segment 1: paddr=001a29f0 vaddr=3ffb0000 size=03b84h ( 15236) load[0m
+[0;32mI (243) esp_image: segment 2: paddr=001a657c vaddr=40080000 size=09a9ch ( 39580) load[0m
+[0;32mI (260) esp_image: segment 3: paddr=001b0020 vaddr=400d0020 size=de428h (910376) map[0m
+[0;32mI (589) esp_image: segment 4: paddr=0028e450 vaddr=40089a9c size=0b3ech ( 46060) load[0m
+[0;32mI (619) boot: Loaded app from partition at offset 0x160000[0m
+[0;32mI (619) boot: Disabling RNG early entropy source...[0m
+[0;32mI (630) cpu_start: Multicore app[0m
+[0;32mI (639) cpu_start: Pro cpu start user code[0m
+[0;32mI (639) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (639) cpu_start: Application information:[0m
+[0;32mI (642) cpu_start: Project name:     firebase-esp-idf[0m
+[0;32mI (648) cpu_start: App version:      c2f5f09-dirty[0m
+[0;32mI (653) cpu_start: Compile time:     Oct  7 2024 12:55:51[0m
+[0;32mI (660) cpu_start: ELF file SHA256:  27237ca3d...[0m
+[0;32mI (665) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (670) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (675) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (680) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (685) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (692) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (698) heap_init: At 3FFB9428 len 00026BD8 (154 KiB): DRAM[0m
+[0;32mI (704) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (710) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (717) heap_init: At 40094E88 len 0000B178 (44 KiB): IRAM[0m
+[0;32mI (724) spi_flash: detected chip: generic[0m
+[0;32mI (728) spi_flash: flash io: dio[0m
+[0;32mI (733) main_task: Started on CPU0[0m
+[0;32mI (743) main_task: Calling app_main()[0m
+[0;32mI (753) example_connect: Start example_connect.[0m
+I (763) wifi:wifi driver task: 3ffc226c, prio:23, stack:6656, core=0
+I (763) wifi:wifi firmware version: 3e0076f
+I (763) wifi:wifi certification version: v7.0
+I (763) wifi:config NVS flash: enabled
+I (763) wifi:config nano formating: disabled
+I (773) wifi:Init data frame dynamic rx buffer num: 32
+I (773) wifi:Init static rx mgmt buffer num: 5
+I (783) wifi:Init management short buffer num: 32
+I (783) wifi:Init dynamic tx buffer num: 32
+I (793) wifi:Init static rx buffer size: 1600
+I (793) wifi:Init static rx buffer num: 10
+I (793) wifi:Init dynamic rx buffer num: 32
+[0;32mI (803) wifi_init: rx ba win: 6[0m
+[0;32mI (803) wifi_init: tcpip mbox: 32[0m
+[0;32mI (803) wifi_init: udp mbox: 6[0m
+[0;32mI (813) wifi_init: tcp mbox: 6[0m
+[0;32mI (813) wifi_init: tcp tx win: 5760[0m
+[0;32mI (823) wifi_init: tcp rx win: 5760[0m
+[0;32mI (823) wifi_init: tcp mss: 1440[0m
+[0;32mI (823) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (833) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (843) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (923) wifi:mode : sta (d4:8a:fc:9d:cf:ec)
+I (923) wifi:enable tsf
+[0;32mI (923) example_connect: Connecting to GSPL...[0m
+[0;32mI (933) example_connect: Waiting for IP(s)[0m
+[0;32mI (3343) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (5753) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (8163) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (10583) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (12993) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (15403) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (17813) example_connect: WiFi Connect failed 7 times, stop reconnect.[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d631b
+file: "./main/main.cpp" line 214
+func: void app_main()
+expression: example_connect()
+
+abort() was called at PC 0x400886b7 on core 0
+
+
+Backtrace: 0x4008164e:0x3ffbc6c0 0x400886c1:0x3ffbc6e0 0x4008f17e:0x3ffbc700 0x400886b7:0x3ffbc770 0x400d631b:0x3ffbc7a0 0x401ac6af:0x3ffbc940
+
+
+
+
+ELF file SHA256: 27237ca3d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15672
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (32) boot: ESP-IDF v5.2-dev-823-g903af13e84-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Oct 13 2024 23:41:33[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.1[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (80) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (88) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (95) boot:  3 factory          factory app      00 00 00010000 00150000[0m
+[0;32mI (103) boot:  4 ota_0            OTA app          00 10 00160000 00140000[0m
+[0;32mI (110) boot:  5 ota_1            OTA app          00 11 002a0000 00140000[0m
+[0;32mI (118) boot:  6 nvs_key          NVS keys         01 04 003e0000 00001000[0m
+[0;32mI (126) boot: End of partition table[0m
+[0;32mI (130) esp_image: segment 0: paddr=00160020 vaddr=3f400020 size=429c8h (272840) map[0m
+[0;32mI (237) esp_image: segment 1: paddr=001a29f0 vaddr=3ffb0000 size=03b84h ( 15236) load[0m
+[0;32mI (243) esp_image: segment 2: paddr=001a657c vaddr=40080000 size=09a9ch ( 39580) load[0m
+[0;32mI (260) esp_image: segment 3: paddr=001b0020 vaddr=400d0020 size=de428h (910376) map[0m
+[0;32mI (589) esp_image: segment 4: paddr=0028e450 vaddr=40089a9c size=0b3ech ( 46060) load[0m
+[0;32mI (619) boot: Loaded app from partition at offset 0x160000[0m
+[0;32mI (619) boot: Disabling RNG early entropy source...[0m
+[0;32mI (630) cpu_start: Multicore app[0m
+[0;32mI (639) cpu_start: Pro cpu start user code[0m
+[0;32mI (639) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (639) cpu_start: Application information:[0m
+[0;32mI (642) cpu_start: Project name:     firebase-esp-idf[0m
+[0;32mI (648) cpu_start: App version:      c2f5f09-dirty[0m
+[0;32mI (653) cpu_start: Compile time:     Oct  7 2024 12:55:51[0m
+[0;32mI (660) cpu_start: ELF file SHA256:  27237ca3d...[0m
+[0;32mI (665) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (670) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (675) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (680) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (685) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (692) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (698) heap_init: At 3FFB9428 len 00026BD8 (154 KiB): DRAM[0m
+[0;32mI (704) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (710) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (717) heap_init: At 40094E88 len 0000B178 (44 KiB): IRAM[0m
+[0;32mI (724) spi_flash: detected chip: generic[0m
+[0;32mI (728) spi_flash: flash io: dio[0m
+[0;32mI (733) main_task: Started on CPU0[0m
+[0;32mI (743) main_task: Calling app_main()[0m
+[0;32mI (753) example_connect: Start example_connect.[0m
+I (763) wifi:wifi driver task: 3ffc226c, prio:23, stack:6656, core=0
+I (763) wifi:wifi firmware version: 3e0076f
+I (763) wifi:wifi certification version: v7.0
+I (763) wifi:config NVS flash: enabled
+I (763) wifi:config nano formating: disabled
+I (773) wifi:Init data frame dynamic rx buffer num: 32
+I (773) wifi:Init static rx mgmt buffer num: 5
+I (783) wifi:Init management short buffer num: 32
+I (783) wifi:Init dynamic tx buffer num: 32
+I (793) wifi:Init static rx buffer size: 1600
+I (793) wifi:Init static rx buffer num: 10
+I (793) wifi:Init dynamic rx buffer num: 32
+[0;32mI (803) wifi_init: rx ba win: 6[0m
+[0;32mI (803) wifi_init: tcpip mbox: 32[0m
+[0;32mI (803) wifi_init: udp mbox: 6[0m
+[0;32mI (813) wifi_init: tcp mbox: 6[0m
+[0;32mI (813) wifi_init: tcp tx win: 5760[0m
+[0;32mI (823) wifi_init: tcp rx win: 5760[0m
+[0;32mI (823) wifi_init: tcp mss: 1440[0m
+[0;32mI (823) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (833) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (843) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (923) wifi:mode : sta (d4:8a:fc:9d:cf:ec)
+I (923) wifi:enable tsf
+[0;32mI (923) example_connect: Connecting to GSPL...[0m
+[0;32mI (933) example_connect: Waiting for IP(s)[0m
+[0;32mI (3343) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (5753) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (8163) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (10583) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (12993) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
